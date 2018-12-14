@@ -64,6 +64,16 @@
 						title:'other',
 						path:'/other'
 					}]
+				}, {
+					title: 'works',
+					icon:'el-icon-location',
+					sub: [{
+						title:'leave',
+						path:'/leave'
+					},{
+						title:'leaves',
+						path:'/leaves'
+					},]
 				}]
 			};
 

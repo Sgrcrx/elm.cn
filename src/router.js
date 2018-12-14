@@ -11,6 +11,8 @@ import Input from './views/Input.vue'
 import Cascader from './views/Cascader.vue'
 import Select from './views/Select.vue'
 import Number from './views/Number.vue'
+import Leave from './views/Leave.vue'
+import Leaves from './views/Leaves.vue'
 
 Vue.use(Router)
 
@@ -61,5 +63,13 @@ export default new Router({
 		path: '/number',
 		name: 'number',
 		component: Number
+	}, {
+		path: '/leave',
+		name: 'leave',
+		component: Leave
+	}, {
+		path: '/leaves',
+		name: 'leaves',
+		component: Leaves
 	}]
 })
