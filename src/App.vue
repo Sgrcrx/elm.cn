@@ -1,29 +1,34 @@
 <template>
-	<div id="app">
-
-		<header></header>
-		<aside>
-<admin-aside></admin-aside>
-		</aside>
-		<main>
-			<router-view/>
-		</main>
-	</div>
+	<el-container id="app">
+		<el-aside width="220px">
+			<admin-aside></admin-aside>
+		</el-aside>
+		<el-container>
+			<el-header>
+				<admin-header></admin-header>
+			</el-header>
+			<el-main>
+				<router-view/>
+			</el-main>
+			<el-footer>© 2018.12.14  陈融炫</el-footer>
+		</el-container>
+	</el-container>
 
 </template>
 
 <script>
 	import AdminAside from '@/components/Aside'
+	import AdminHeader from '@/components/Header'
 	export default {
-		data(){
-			return{};
+		data() {
+			return {};
 		},
-		methods:{},
-		components:{
-			AdminAside
+		methods: {},
+		components: {
+			AdminAside,
+			AdminHeader
 		},
-		
-		
+
 	};
 </script>
 
@@ -37,37 +42,16 @@
 		background-color: #f2f2f2;
 	}
 	
-	header {
-		height: 50px;
-		width: 100%;
-		position: fixed;
-		top: 0px;
-		left: 0px;
-		background-color: #fff;
-		border-bottom: solid 1px #ccc;
+	.el-header {
+		background-color: #FFFFFF;
 	}
 	
-	aside {
-		box-sizing: border-box;
-		height: 100%;
-		width: 220px;
-		position: fixed;
-		top: 0px;
-		left: 0px;
+	.el-aside {
 		background-color: #20222A;
-		color: #fff;
-		overflow: hidden;
-		overflow-y: auto;
 	}
 	
-	main {
-		position: fixed;
-		box-sizing: border-box;
-		top: 50px;
-		left: 220px;
-		right: 0px;
-		bottom: 0px;
-		overflow: hidden;
-		overflow-y: auto;
+	.el-footer {
+		background-color: #FFFFFF;
+		line-height: 60px;
 	}
 </style>

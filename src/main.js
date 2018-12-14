@@ -6,6 +6,8 @@ import store from './store'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 Vue.use(ElementUI);
+//fa 字体包
+import "./assets/css/font-awesome.min.css";
 
 
 Vue.config.productionTip = false

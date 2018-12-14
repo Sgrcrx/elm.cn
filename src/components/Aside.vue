@@ -20,19 +20,43 @@
 					title: 'basic',
 					icon:'el-icon-location',
 					sub: [{
-						title: 'layout布局',
+						title: 'layout 布局',
 						path: '/layout'
 					}, {
 						title: 'Container 容器',
 						path: '/container'
+					}, {
+						title: 'Icon 图标',
+						path: '/icon'
+					}, {
+						title: 'Button 按钮',
+						path: '/button'
 					}]
 				}, {
 					title: 'form',
 					icon:'el-icon-location',
 					sub: [{
-						title:'me',
-						path:'/me'
-					}]
+						title:'radio',
+						path:'/radio'
+					},{
+						title:'checkbox',
+						path:'/checkbox'
+					},{
+						title:'input',
+						path:'/input'
+					},{
+						title:'number',
+						path:'/number'
+					},{
+						title:'select',
+						path:'/select'
+					},{
+						title:'cascader',
+						path:'/cascader'
+					},{
+						title:'switch',
+						path:'/switch'
+					},]
 				}, {
 					title: 'Data',
 					icon:'el-icon-location',
