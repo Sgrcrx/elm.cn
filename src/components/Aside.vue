@@ -66,6 +66,9 @@
 					},{
 						title:'scores',
 						path:'/scores'
+					},{
+						title:'score',
+						path:'/score'
 					},]
 				}, {
 					title: 'works',

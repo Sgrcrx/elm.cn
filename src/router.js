@@ -14,6 +14,7 @@ import Number from './views/Number.vue'
 import Leave from './views/Leave.vue'
 import Leaves from './views/Leaves.vue'
 import Scores from './views/Scores.vue'
+import Score from './views/Score.vue'
 
 Vue.use(Router)
 
@@ -76,5 +77,9 @@ export default new Router({
 		path: '/scores',
 		name: 'scores',
 		component: Scores
+	}, {
+		path: '/score',
+		name: 'score',
+		component: Score
 	}]
 })
