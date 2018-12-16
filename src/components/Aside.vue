@@ -63,7 +63,10 @@
 					sub: [{
 						title:'other',
 						path:'/other'
-					}]
+					},{
+						title:'scores',
+						path:'/scores'
+					},]
 				}, {
 					title: 'works',
 					icon:'el-icon-location',

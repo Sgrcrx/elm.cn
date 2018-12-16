@@ -13,6 +13,7 @@ import Select from './views/Select.vue'
 import Number from './views/Number.vue'
 import Leave from './views/Leave.vue'
 import Leaves from './views/Leaves.vue'
+import Scores from './views/Scores.vue'
 
 Vue.use(Router)
 
@@ -71,5 +72,9 @@ export default new Router({
 		path: '/leaves',
 		name: 'leaves',
 		component: Leaves
+	}, {
+		path: '/scores',
+		name: 'scores',
+		component: Scores
 	}]
 })
