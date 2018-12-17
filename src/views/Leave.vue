@@ -80,8 +80,8 @@
 </template>
 
 <script>
-	import axios from "axios";
-	import qs from "qs";
+	import axios from"axios";
+	import qs from 'qs';
 	export default {
 		data() {
 			return {

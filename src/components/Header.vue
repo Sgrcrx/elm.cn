@@ -27,10 +27,14 @@
 				</el-menu-item>
 			</el-menu>
 		</el-col>
+		
+		
+		<!--end-->
 	</el-row>
 </template>
 
 <script>
+	
 	export default {
 		data() {
 			return {
@@ -61,7 +65,8 @@
 		created() {
 			// 获取路由中所有的地址
 			this.funList = [...this.$router.options.routes];
-		}
+		},
+		
 	}
 </script>
 

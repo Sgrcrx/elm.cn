@@ -56,6 +56,9 @@
 					},{
 						title:'switch',
 						path:'/switch'
+					},{
+						title:'tabs',
+						path:'/tabs'
 					},]
 				}, {
 					title: 'Data',
@@ -63,7 +66,10 @@
 					sub: [{
 						title:'other',
 						path:'/other'
-					}]
+					},{
+						title:'scores',
+						path:'/scores'
+					},]
 				}, {
 					title: 'works',
 					icon:'el-icon-location',
@@ -73,6 +79,9 @@
 					},{
 						title:'leaves',
 						path:'/leaves'
+					},{
+						title:'leavea',
+						path:'/leavea'
 					},]
 				}]
 			};

@@ -11,8 +11,11 @@ import Input from './views/Input.vue'
 import Cascader from './views/Cascader.vue'
 import Select from './views/Select.vue'
 import Number from './views/Number.vue'
+import Scores from './views/Scores.vue'
 import Leave from './views/Leave.vue'
 import Leaves from './views/Leaves.vue'
+import Leavea from './views/Leavea.vue'
+import Tabs from './components/Tabs.vue'
 
 Vue.use(Router)
 
@@ -71,5 +74,17 @@ export default new Router({
 		path: '/leaves',
 		name: 'leaves',
 		component: Leaves
+	},{
+		path: '/leavea',
+		name: 'leavea',
+		component: Leavea
+	}, {
+		path: '/scores',
+		name: 'scores',
+		component: Scores
+	}, {
+		path: '/tabs',
+		name: 'tabs',
+		component: Tabs
 	}]
 })
