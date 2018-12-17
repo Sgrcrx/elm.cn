@@ -9,6 +9,9 @@ Vue.use(ElementUI);
 //fa 字体包
 import "./assets/css/font-awesome.min.css";
 
+// 设置服务器地址
+//Vue.prototype.serveRoot = "http://192.168.255.30:8888";
+
 
 Vue.config.productionTip = false
 
