@@ -1,6 +1,7 @@
 <template>
 	<el-card class="box-card">
-		<div slot="header" class="clearfix">
+		<el-form :model="numberValidateForm" ref="numberValidateForm" label-width="100px" class="demo-ruleForm">
+		<div slot="header" class="clearfix" prop="names">
 			<span>请假页-员工页</span>
 			<el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button>
 		</div>
@@ -35,7 +36,7 @@
 		<h1 class="leave-name">备注</h1>
 		<el-input class='leaves' type="textarea" autosize placeholder="请输入备注内容"></el-input>
 		<!--紧急联系方式-->
-		<el-form :model="numberValidateForm" ref="numberValidateForm" label-width="100px" class="demo-ruleForm">
+		
 			<el-form-item label="联系电话" prop="age" :rules="[
       { required: true, message: '联系电话不能为空'},
       { type: 'number', message: '联系电话必须为数字值'}
@@ -78,7 +79,8 @@
 				}],
 				value: '',
 				numberValidateForm: {
-					age: ''
+					age: '',
+					names:''
 				}
 			}
 		},
