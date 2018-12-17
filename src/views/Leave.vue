@@ -22,6 +22,7 @@
 							<el-option label="产假" value="产假"></el-option>
 							<el-option label="丧假" value="丧假"></el-option>
 							<el-option label="年假" value="年假"></el-option>
+							<el-option label="放飞自我" value="放飞自我"></el-option>
 							<el-option label="其他" value="其他"></el-option>
 						</el-select>
 					</el-form-item>
