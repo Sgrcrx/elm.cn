@@ -167,6 +167,5 @@
 <style scoped="scoped">
 button{
 	text-align: center;
-	/*margin-right: 40px;*/
 }
 </style>
