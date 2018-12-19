@@ -1,63 +1,48 @@
 <template>
-	
-		<el-tabs v-model="tabsValue" type="card" editable @edit="handleTabsEdit">
-			<el-tab-pane :keys="item.keys" v-for="(item, index) in tabs" :label="item.title" :name="item.name">
-				<span slot="label">
-					<i :class="item.icon"></i>
-					<span v-text="item.label"></span>
-				</span>
-			</el-tab-pane>
-		</el-tabs>
 
-	
+	<el-tabs v-model="activeName" @tab-click="handleClick" @tab-remove="handleRemove">
+		<el-tab-pane :name="tab.path" :key="index" v-for="(tab,index) in tabs" :closable="index!=0">
+			<span slot="label">
+			 	<i :class="tab.icon"></i>&nbsp;<span v-text="tab.label"></span>
+			</span>
+		</el-tab-pane>
+	</el-tabs>
+
 </template>
 
 <script>
 	export default {
 		data() {
 			return {
-				tabsValue: '2',
 				tabs: [{
-					title: 'Tab 1',
-					keys: '1',
-					name:'首页',
-					content: 'Tab 1 content'
+					label: '首页',
+					path: '/home',
+					icon: 'fa fa-home'
 				}, {
-					title: 'Tab 2',
-					keys: '2',
-					content: 'Tab 2 content'
+					label: '布局',
+					path: '/layout',
+					icon: 'fa fa-home'
+				}, {
+					label: '容器',
+					path: '/container',
+					icon: 'fa fa-home'
+				}, {
+					label: '图标',
+					path: '/icon',
+					icon: 'fa fa-home'
 				}],
-				tabIndex: 2
-			}
+				activeName: '/home'
+			};
 		},
 		methods: {
-			handleTabsEdit(targetName, action) {
-				if(action === 'add') {
-					let newTabName = ++this.tabIndex + '';
-					this.tabs.push({
-						title: 'New Tab',
-						name: newTabName,
-						content: 'New Tab content'
-					});
-					this.tabsValue = newTabName;
-				}
-				if(action === 'remove') {
-					let tabs = this.tabs;
-					let activeName = this.tabsValue;
-					if(activeName === targetName) {
-						tabs.forEach((tab, index) => {
-							if(tab.name === targetName) {
-								let nextTab = tabs[index + 1] || tabs[index - 1];
-								if(nextTab) {
-									activeName = nextTab.name;
-								}
-							}
-						});
-					}
-
-					this.tabsValue = activeName;
-					this.tabs = tabs.filter(tab => tab.name !== targetName);
-				}
+			handleClick(tab) {
+				console.log(tab);
+				this.$router.push(this.activeName);
+			},
+			handleRemove(name) {
+				this.tabs = this.tabs.filter(item => item.path != name);
+				this.activeName = this.tabs[0].path;
+				this.$router.push(this.activeName);
 			}
 		}
 	}
