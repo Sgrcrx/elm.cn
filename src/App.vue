@@ -9,7 +9,9 @@
 				<tabs></tabs>
 			</el-header>
 			<el-main>
-				<router-view/>
+				<keep-alive>
+					<router-view/>
+				</keep-alive>
 			</el-main>
 			<el-footer>© 2018.12.14  陈融炫</el-footer>
 		</el-container>

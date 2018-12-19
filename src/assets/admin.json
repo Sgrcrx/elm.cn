@@ -1,0 +1,100 @@
+[{
+					"title": "basic",
+					"icon":"el-icon-location",
+					"sub": [{
+						"title": "layout 布局",
+						"path": "/layout",
+					"icon":"el-icon-location"
+					}, {
+						"title": "Container 容器",
+						"path": "/container",
+					"icon":"el-icon-location"
+						
+					}, {
+						"title": "icon 图标",
+						"path": "/icon",
+					"icon":"el-icon-location"
+					}, {
+						"title": "Button 按钮",
+						"path": "/button",
+					"icon":"el-icon-location"
+						
+					}]
+				}, {
+					"title": "form",
+					"icon":"el-icon-location",
+					"sub": [{
+						"title":"radio",
+						"path":"/radio",
+					"icon":"el-icon-location"
+						
+					},{
+						"title":"checkbox",
+						"path":"/checkbox",
+					"icon":"el-icon-location"
+						
+					},{
+						"title":"input",
+						"path":"/input",
+					"icon":"el-icon-location"
+						
+					},{
+						"title":"number",
+						"path":"/number",
+					"icon":"el-icon-location"
+						
+					},{
+						"title":"select",
+						"path":"/select",
+					"icon":"el-icon-location"
+						
+					},{
+						"title":"cascader",
+						"path":"/cascader",
+					"icon":"el-icon-location"
+						
+					},{
+						"title":"switch",
+						"path":"/switch",
+					"icon":"el-icon-location"
+						
+					},{
+						"title":"tabs",
+						"path":"/tabs",
+					"icon":"el-icon-location"
+						
+					}]
+				}, {
+					"title": "Data",
+					"icon":"el-icon-location",
+					"sub": [{
+						"title":"other",
+						"path":"/other",
+					"icon":"el-icon-location"
+						
+					},{
+						"title":"scores",
+						"path":"/scores",
+					"icon":"el-icon-location"
+						
+					}]
+				}, {
+					"title": "works",
+					"icon":"el-icon-location",
+					"sub": [{
+						"title":"leave",
+						"path":"/leave",
+					"icon":"el-icon-location"
+						
+					},{
+						"title":"leaves",
+						"path":"/leaves",
+					"icon":"el-icon-location"
+						
+					},{
+						"title":"leavea",
+						"path":"/leavea",
+					"icon":"el-icon-location"
+						
+					}]
+				}]

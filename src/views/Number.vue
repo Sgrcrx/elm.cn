@@ -13,6 +13,7 @@
 </template>
 
 <script>
+	import {mapState} from 'vuex';
 	export default {
 		data() {
 			return {
@@ -24,7 +25,17 @@
 		methods: {
 			
 		},
-		methods: {}
+		computed:{
+			...mapState(['tabs']),
+			activePath:{
+				set(path){
+					
+				},
+				get(){
+					
+				}
+			}
+		}
 	}
 </script>
 
